@@ -42,6 +42,7 @@ export class AppComponent implements OnInit {
             postsArray.push({...responseData[key],id:key});
           }
         }
+        return postsArray;
       })
     )
     .subscribe(
